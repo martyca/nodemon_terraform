@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+name=$(terraform output lambda_name)
+saw watch "/aws/lambda/${name}"

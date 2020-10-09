@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+terraform apply -auto-approve
+ARN=$(terraform output lambda_ARN)
+
+aws lambda invoke --function-name $ARN response.json
+jq . response.json

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+ARN=$(terraform output lambda_ARN)
+aws lambda invoke --function-name $ARN response.json
+jq . response.json
