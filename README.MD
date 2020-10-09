@@ -1,6 +1,8 @@
-# Basic AWS Lambda template
-Simple AWS Lambda deployment template.
+# Basic AWS Lambda template with monitoring
+This deploys a simple aws lambda, the juice is in the nodemon.
 
-## Usage
-In "lambda.rf" there is a locals map that has values for python and nodeJS.
-Change the `locals` reference in the "lambda.tf" file to correspond with the type of lambda you need.
+## Prerequisites
+NPM https://www.npmjs.com/get-npm
+nodemon
+`npm install -g nodemon`
+
